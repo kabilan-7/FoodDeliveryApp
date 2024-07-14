@@ -6,7 +6,7 @@ const StoreContextProvider=(props)=>{
     const [token,setToken] = useState("")
     const [cartItems,setCartItems] = useState({})
     const [food_list,setFoodList]=useState([])
-    const url = "http://localhost:4000"
+    const url = "https://fooddeliveryapp-backend-lkyo.onrender.com"
     const addtoCart = async (itemId)=>{
         if(!cartItems[itemId]){
             setCartItems((prev)=>({...prev,[itemId]:1}))
