@@ -1,11 +1,4 @@
 
-.header{
-    height: 34vw;
-    margin: 30px auto;
-   background: url(C:\Users\LENOVO\Desktop\FoodDeliveryApp\Foodapp\src\assets\header_img.png) no-repeat;
-    background-size: contain;
-    position: relative;
-}
 .header-contents{
     position: absolute;
     display: flex;
