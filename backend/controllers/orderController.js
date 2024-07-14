@@ -5,7 +5,7 @@ import Stripe from "stripe"
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 //placing user order from fronted
 const placeOrder = async (req,res)=>{
-    const fronted_url="http://localhost:3001"
+    const fronted_url="http://localhost:3000"
    try {
     const newOrder = new orderModel({
         userId:req.body.userId,

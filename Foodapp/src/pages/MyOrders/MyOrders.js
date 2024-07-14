@@ -4,7 +4,7 @@ import { StoreContext } from '../../Context/StoreContext'
 import { useContext,useState} from 'react'
 import axios from 'axios'
 import {assets} from '../../assets/assets'
-import { toast } from 'react-toastify'
+
 const MyOrders = () => {
     const {url,token}=useContext(StoreContext)
     const [data,setData] = useState([])

@@ -58,9 +58,9 @@ const PlaceOrder = () => {
         toast.success("Order Placed!");
         navigate('/myorders');
       } else if (selectedMethod === "Stripe" && response.data.success) {
-        toast.success("Order Placed!");
         const { session_url } = response.data;
         window.location.replace(session_url);
+        toast.success("Order Placed!");
       } else {
         toast.error("Error placing order. Please try again.");
       }
